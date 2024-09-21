@@ -1,0 +1,142 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #336699;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Основной Grid-контейнер для About Me и Web Dev Resources */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 для About Me и 1/3 для Web Dev Resources */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Блок About Me с Toloria внутри */
+.profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+/* Grid-сетка внутри About Me */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* About Me + Фото (2/3), Toloria (1/3) */
+    grid-template-rows: auto auto; /* Две строки */
+    grid-gap: 20px;
+
+}
+
+/* About Me занимает 2/3 */
+.about-me {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+/* Фото Rubia */
+.image-info {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.image-info img {
+    max-width: 100%;
+    border-radius: 1%;
+    max-width: 200px;
+    height: auto;
+}
+.russia-flag figure {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+/* Toloria Madagascar занимает 1/3 */
+.russia-flag{
+    grid-column: 1 / 3; /* Занимает всю ширину */
+    grid-row: 2;        /* Во второй строке */
+    text-align: left;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+.russia-flag img {
+    max-width: 120px;
+    margin-right: 15px;
+    float: left;
+}
+.russia-flag figcaption {
+    font-size: 14px; /* Размер текста подписи */
+    color: #383838; /* Цвет подписи */
+    margin-top: 5px; /* Отступ между изображением и подписью */
+    font-style: italic; /* Делаем текст курсивным */
+
+/* Стили для блока Web Dev Resources */
+}
+.resources {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    color: #336699;
+    text-decoration: none;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    background-color: #336699; /* Синий цвет для футера */
+    color: white;
+    padding: 10px;
+}
+
+.location {
+    color: #ff69b4;
+}
